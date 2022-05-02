@@ -11,6 +11,7 @@ export const balanceSlice = createSlice({
   reducers: {
     deposit: (state, action) => {
       console.log("Hello from the reducer!");
+      state.amount = state.amount + action.payload;
     },
   },
 });
